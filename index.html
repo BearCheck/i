@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Avenue — Salon de coiffure à Lyon</title>
+    <meta
+      name="description"
+      content="Style Avenue, salon de coiffure urbain et élégant au cœur de Lyon. Coupe, coiffage, coloration, balayage. Réservation en ligne via Planity."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./salon.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Style Avenue">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="sa-g" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffffff" stop-opacity="0.65" />
+                  <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <rect x="6" y="6" width="52" height="52" rx="18" fill="#0f0f0f" />
+              <rect x="7" y="7" width="50" height="50" rx="17" fill="url(#sa-g)" />
+              <path d="M19 24c0-3.3 2.7-6 6-6h14c3.3 0 6 2.7 6 6" fill="none" stroke="#ffffff" stroke-opacity="0.32" stroke-width="1.5" />
+              <text x="32" y="38" text-anchor="middle" fill="#ffffff" font-family="Playfair Display, serif" font-size="22" font-weight="600" letter-spacing="0.04em">SA</text>
+              <path d="M18 44h28" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="brand__name">
+            <span class="brand__name-top">Style</span>
+            <span class="brand__name-bottom">Avenue</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a class="nav__link" href="#about">À propos</a>
+          <a class="nav__link" href="#services">Prestations</a>
+          <a class="nav__link" href="#gallery">Galerie</a>
+          <a class="nav__link" href="#reviews">Avis</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--ghost" href="tel:+33474266618">Nous appeler</a>
+          <a
+            class="btn btn--primary"
+            href="https://www.planity.com/style-avenue-69005-lyon"
+            target="_blank"
+            rel="noreferrer"
+            >Prendre rendez-vous</a>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <div class="container mobile-nav__inner">
+          <a class="mobile-nav__link" href="#about">À propos</a>
+          <a class="mobile-nav__link" href="#services">Prestations</a>
+          <a class="mobile-nav__link" href="#gallery">Galerie</a>
+          <a class="mobile-nav__link" href="#reviews">Avis</a>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+          <div class="mobile-nav__cta">
+            <a class="btn btn--ghost" href="tel:+33474266618">Nous appeler</a>
+            <a
+              class="btn btn--primary"
+              href="https://www.planity.com/style-avenue-69005-lyon"
+              target="_blank"
+              rel="noreferrer"
+              >Prendre rendez-vous</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Style Avenue" id="home">
+        <div class="hero__media" aria-hidden="true"></div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+
+        <div class="container hero__content" data-reveal>
+          <p class="eyebrow">Salon urbain • Lyon</p>
+          <h1 class="hero__title">Votre style, notre expertise</h1>
+          <p class="hero__subtitle">Un salon moderne au cœur de Lyon</p>
+
+          <div class="hero__cta">
+            <a
+              class="btn btn--primary btn--lg"
+              href="https://www.planity.com/style-avenue-69005-lyon"
+              target="_blank"
+              rel="noreferrer"
+              >Prendre rendez-vous</a>
+            <a class="btn btn--ghost btn--lg" href="tel:+33474266618">Nous appeler</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta-pill">★★★★★ 5,0</div>
+            <div class="meta-pill">Jeudi jusqu’à 20:30</div>
+            <div class="meta-pill">Réservation 24/7</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-label="À propos">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Une signature moderne, une exigence premium</h2>
+            <p class="lead">
+              Style Avenue accueille une clientèle mixte dans un cadre lumineux et élégant.
+              Nous privilégions la précision, la qualité des produits et une expérience
+              fluide — du diagnostic au résultat.
+            </p>
+          </div>
+
+          <div class="about" data-reveal>
+            <div class="about__card">
+              <h3 class="h3">Expertise & conseil</h3>
+              <p>
+                Une coupe réussie commence par l’écoute. Nous adaptons chaque prestation à
+                votre morphologie, votre style de vie et votre texture.
+              </p>
+            </div>
+            <div class="about__card">
+              <h3 class="h3">Qualité & confort</h3>
+              <p>
+                Un service professionnel et chaleureux, pensé pour que vous passiez un bon
+                moment — et repartiez avec un style net, durable, facile à vivre.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="services" aria-label="Prestations">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Prestations & tarifs</h2>
+            <p class="lead">
+              Des prix clairs, une exécution soignée. Certaines prestations spécifiques
+              peuvent nécessiter un devis au salon.
+            </p>
+          </div>
+
+          <div class="accordion" data-accordion data-reveal>
+            <details class="acc" open>
+              <summary class="acc__summary">
+                <span class="acc__title">Brushings & coupe</span>
+                <span class="acc__hint">Femme</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Mise en plis</span><span>23 €</span></div>
+                  <div class="price-item"><span>Shampoing + brushing</span><span>23 €</span></div>
+                  <div class="price-item"><span>Shampoing + brushing (cheveux longs)</span><span>29 €</span></div>
+                  <div class="price-item"><span>Shampoing + coupe</span><span>32 €</span></div>
+                  <div class="price-item"><span>Shampoing + coupe + brushing</span><span>40 €</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Coloration</span>
+                <span class="acc__hint">Couleur</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Coloration + shampoing brushing</span><span>59 €</span></div>
+                  <div class="price-item"><span>Coloration + shampoing brushing (cheveux longs)</span><span>65 €</span></div>
+                  <div class="price-item"><span>Coloration + shampoing coupe brushing</span><span>76 €</span></div>
+                  <div class="price-item"><span>Coloration + shampoing coupe brushing (cheveux longs)</span><span>79 €</span></div>
+                  <div class="price-item"><span>Coloration seule</span><span>36 € – 46 €</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Mèches / balayage</span>
+                <span class="acc__hint">Techniques</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Mèches + shampoing brushing</span><span>91 €</span></div>
+                  <div class="price-item"><span>Mèches + shampoing brushing (cheveux longs)</span><span>107 €</span></div>
+                  <div class="price-item"><span>Mèches + shampoing coupe brushing</span><span>108 €</span></div>
+                  <div class="price-item"><span>Mèches + shampoing coupe brushing (cheveux longs)</span><span>123 €</span></div>
+                  <div class="price-item"><span>Décoloration seule</span><span>Sur devis</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Permanente / lissage</span>
+                <span class="acc__hint">Décapage, gommage</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Permanente shampoing + coiffage</span><span>75 €</span></div>
+                  <div class="price-item"><span>Shampoing + permanente demi-tête</span><span>55 €</span></div>
+                  <div class="price-item"><span>Shampoing + lissage</span><span>75 €</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Coiffures</span>
+                <span class="acc__hint">Événement</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Chignon / coiffure de soirée</span><span>50 € – 110 €</span></div>
+                  <div class="price-item"><span>Forfait mariage + 1 essai</span><span>100 € – 220 €</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Soins</span>
+                <span class="acc__hint">Cheveux</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Soin</span><span>8 €</span></div>
+                  <div class="price-item"><span>Soin profond</span><span>À partir de 15 €</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Messieurs</span>
+                <span class="acc__hint">Homme</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Shampoing + coupe + coiffage</span><span>23 €</span></div>
+                  <div class="price-item"><span>Cover Five</span><span>Sur devis</span></div>
+                  <div class="price-item"><span>Flash</span><span>Sur devis</span></div>
+                  <div class="price-item"><span>Permanente homme</span><span>42 €</span></div>
+                  <div class="price-item"><span>Shampoing + permanente dessus de tête</span><span>36 €</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Enfants</span>
+                <span class="acc__hint">Jusqu’au collège</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Shampoing + coupe + coiffage (jusqu’à 5 ans)</span><span>13 €</span></div>
+                  <div class="price-item"><span>Shampoing + coupe + coiffage (au-delà de 5 ans)</span><span>15 €</span></div>
+                  <div class="price-item"><span>Primaire fille</span><span>15 €</span></div>
+                  <div class="price-item"><span>Collège fille</span><span>25 €</span></div>
+                </div>
+              </div>
+            </details>
+
+            <details class="acc">
+              <summary class="acc__summary">
+                <span class="acc__title">Beauté des ongles</span>
+                <span class="acc__hint">Semi-permanent</span>
+              </summary>
+              <div class="acc__content">
+                <div class="price-list">
+                  <div class="price-item"><span>Pose de vernis semi-permanent couleur — mains</span><span>27 €</span></div>
+                  <div class="price-item"><span>Pose de vernis semi-permanent couleur — pieds</span><span>28 €</span></div>
+                  <div class="price-item"><span>Pose de vernis semi-permanent Funny</span><span>35 €</span></div>
+                  <div class="price-item"><span>Pose de vernis semi-permanent French</span><span>35 €</span></div>
+                  <div class="price-item"><span>Pose de vernis semi-permanent Cat Eyes</span><span>39 €</span></div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="section__foot" data-reveal>
+            <a
+              class="btn btn--primary"
+              href="https://www.planity.com/style-avenue-69005-lyon"
+              target="_blank"
+              rel="noreferrer"
+              >Voir toutes les prestations sur Planity</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery" aria-label="Galerie">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Galerie</h2>
+            <p class="lead">Une esthétique clean, des détails maîtrisés.</p>
+          </div>
+
+          <div class="gallery" data-reveal>
+            <button class="g" data-lightbox data-src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1600&q=80" aria-label="Ouvrir la photo 1">
+              <img alt="Salon moderne" loading="lazy" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" />
+            </button>
+            <button class="g" data-lightbox data-src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=1600&q=80" aria-label="Ouvrir la photo 2">
+              <img alt="Coiffure" loading="lazy" src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=800&q=80" />
+            </button>
+            <button class="g" data-lightbox data-src="https://images.unsplash.com/photo-1520975681971-5d9e1c1f5c6d?auto=format&fit=crop&w=1600&q=80" aria-label="Ouvrir la photo 3">
+              <img alt="Détails premium" loading="lazy" src="https://images.unsplash.com/photo-1520975681971-5d9e1c1f5c6d?auto=format&fit=crop&w=800&q=80" />
+            </button>
+            <button class="g" data-lightbox data-src="https://images.unsplash.com/photo-1527799820374-dcf8c8d1c282?auto=format&fit=crop&w=1600&q=80" aria-label="Ouvrir la photo 4">
+              <img alt="Coupe homme" loading="lazy" src="https://images.unsplash.com/photo-1527799820374-dcf8c8d1c282?auto=format&fit=crop&w=800&q=80" />
+            </button>
+            <button class="g" data-lightbox data-src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1600&q=80" aria-label="Ouvrir la photo 5">
+              <img alt="Balayage" loading="lazy" src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=800&q=80" />
+            </button>
+            <button class="g" data-lightbox data-src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1600&q=80" aria-label="Ouvrir la photo 6">
+              <img alt="Ambiance salon" loading="lazy" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="reviews" aria-label="Avis">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Avis</h2>
+            <p class="lead">
+              Notes Planity : Accueil 5,0 • Propreté 5,0 • Cadre & ambiance 5,0 • Qualité 5,0
+            </p>
+          </div>
+
+          <div class="reviews" data-reveal>
+            <article class="review">
+              <div class="stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="review__text">“Un grand merci à toute l’équipe pour l’accueil et le professionnalisme. Mention spéciale à Cindy pour mon balayage et ma coupe : le résultat est magnifique et au-delà de mes attentes ! Je suis ravie. Je recommande ce salon sans hésiter. ✨”</p>
+              <div class="review__meta">Shani Lopes</div>
+            </article>
+            <article class="review">
+              <div class="stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="review__text">“Super pour la première coupe de ma fille! J'avais sélectionné ce salon car il y avait plusieurs avis positifs pour les coupes enfant, je rajoute donc le mien et recommande Anaïs qui a fait une super coupe, et sa collègue qui l'a tout de suite mise à l'aise au shampoing (alors qu'elle n'aime pas du tout ça). Merci à toutes les deux!”</p>
+              <div class="review__meta">Morgane Vernier</div>
+            </article>
+            <article class="review">
+              <div class="stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="review__text">“Ça fait longtemps que je suis attirée par le cat eye en vitrine et je me suis lancée côté ongles avec Melanie. C'est vraiment trop beau !!! Mélanie est super rapide et efficace, elle a de supers idées pour les ongles et j'ai été ravie du résultat à chaque fois. Je compte bien y retourner souvent !”</p>
+              <div class="review__meta">Reine Colin</div>
+            </article>
+          </div>
+
+          <div class="section__foot" data-reveal>
+            <a class="btn btn--primary" href="https://share.google/dBaQRUcRgW92BOfXA" target="_blank" rel="noreferrer">Voir plus d’avis</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section booking" aria-label="Réservation">
+        <div class="container" data-reveal>
+          <div class="booking__inner">
+            <div>
+              <h2 class="h2">Prenez rendez-vous facilement</h2>
+              <p class="lead">
+                Réservation en ligne en quelques clics. Choisissez votre prestation, sélectionnez
+                votre créneau, confirmez.
+              </p>
+            </div>
+            <div class="booking__actions">
+              <a
+                class="btn btn--primary btn--lg"
+                href="https://www.planity.com/style-avenue-69005-lyon"
+                target="_blank"
+                rel="noreferrer"
+                >Réserver sur Planity</a
+              >
+              <a class="btn btn--ghost btn--lg" href="tel:+33474266618">Appeler le salon</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-label="Contact">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <h2 class="h2">Contact</h2>
+            <p class="lead">Lyon • Accès simple • Accueil professionnel</p>
+          </div>
+
+          <div class="contact" data-reveal>
+            <div class="contact__card">
+              <div class="contact__row">
+                <div class="k">Téléphone</div>
+                <a class="v link" href="tel:+33474266618">+33 4 74 26 66 18</a>
+              </div>
+              <div class="contact__row">
+                <div class="k">Adresse</div>
+                <div class="v">[Adresse à compléter], 69005 Lyon</div>
+              </div>
+              <div class="contact__row">
+                <div class="k">Horaires</div>
+                <div class="v">
+                  <div class="hours">
+                    <div><span>Lundi</span><span>09:00 – 18:30</span></div>
+                    <div><span>Mardi</span><span>09:00 – 18:30</span></div>
+                    <div><span>Mercredi</span><span>09:00 – 18:30</span></div>
+                    <div><span>Jeudi</span><span>09:00 – 20:30</span></div>
+                    <div><span>Vendredi</span><span>09:00 – 18:30</span></div>
+                    <div><span>Samedi</span><span>09:00 – 17:00</span></div>
+                    <div><span>Dimanche</span><span>Fermé</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="map" aria-label="Carte">
+              <iframe
+                title="Google Maps"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Lyon%2069005&output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="sa-gf" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ffffff" stop-opacity="0.65" />
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <rect x="6" y="6" width="52" height="52" rx="18" fill="#0f0f0f" />
+                <rect x="7" y="7" width="50" height="50" rx="17" fill="url(#sa-gf)" />
+                <path d="M19 24c0-3.3 2.7-6 6-6h14c3.3 0 6 2.7 6 6" fill="none" stroke="#ffffff" stroke-opacity="0.32" stroke-width="1.5" />
+                <text x="32" y="38" text-anchor="middle" fill="#ffffff" font-family="Playfair Display, serif" font-size="22" font-weight="600" letter-spacing="0.04em">SA</text>
+                <path d="M18 44h28" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="brand__name">
+              <span class="brand__name-top">Style</span>
+              <span class="brand__name-bottom">Avenue</span>
+            </span>
+          </div>
+          <p class="footer__note">Salon de coiffure moderne et élégant à Lyon.</p>
+        </div>
+
+        <div class="footer__links">
+          <a class="link" href="https://www.planity.com/style-avenue-69005-lyon" target="_blank" rel="noreferrer">Planity</a>
+          <a class="link" href="#services">Prestations</a>
+          <a class="link" href="#contact">Contact</a>
+          <a class="link" href="./mentions-legales.html">Mentions légales</a>
+        </div>
+
+        <div class="footer__social" aria-label="Réseaux sociaux">
+          <a class="icon" href="#" aria-label="Instagram">
+            <span aria-hidden="true">IG</span>
+          </a>
+          <a class="icon" href="#" aria-label="Facebook">
+            <span aria-hidden="true">FB</span>
+          </a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <span>© <span id="year"></span> Style Avenue</span>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" hidden>
+      <div class="lightbox__backdrop" data-lightbox-close></div>
+      <figure class="lightbox__dialog" role="dialog" aria-label="Aperçu image">
+        <button class="lightbox__close" type="button" aria-label="Fermer" data-lightbox-close">
+          ×
+        </button>
+        <img id="lightboxImg" alt="Agrandissement" />
+      </figure>
+    </div>
+
+    <script src="./salon.js" type="module"></script>
+  </body>
+</html>
