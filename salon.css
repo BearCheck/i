@@ -394,7 +394,7 @@ img {
 .hero__media {
   position: absolute;
   inset: 0;
-  background-image: url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2400&q=80");
+  background-image: url("photo/sl.png");
   background-size: cover;
   background-position: center;
   transform: scale(1.04);
@@ -634,7 +634,7 @@ img {
 }
 
 .g:nth-child(6) {
-  grid-column: span 12;
+  grid-column: span 4;
 }
 
 .reviews {
@@ -901,6 +901,14 @@ img {
 
   .about {
     grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .g {
+    grid-column: auto !important;
   }
 
   .reviews {
